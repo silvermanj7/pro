@@ -1,0 +1,229 @@
+.main{background:url("../img/grostorIndex.png") no-repeat;
+    -webkit-background-size: 100%;
+    -moz-background-size: 100%;
+    -o-background-size: 100%;
+    background-size: 80%;background-position: 0px 100px}
+.fert{position: relative;top:27vw;width:12vw;background-color: blue;height:2.5vw;
+      color:red;
+      -ms-transform: rotate(3deg); /* IE 9 */
+      -webkit-transform: rotate(3deg); /* Chrome, Safari, Opera */
+      transform: rotate(3deg);}
+.gif{background: url("../img/seedlingpop.png") no-repeat;visibility: hidden;position:absolute;width:25vw;height:30vw;z-index:2}
+@keyframes ferty {
+    0%   {background:url("../img/seedling.png") no-repeat; background-size:5vw;left:9.2vw;top:28vw}
+    20%  {background:url("../img/seedling1a.png") no-repeat;background-size:8vw;left:7.7vw;top:25vw}
+    40%  {background:url("../img/veg1.png") no-repeat;background-size:20vw;left:1.8vw;top:15.9vw}
+    65% {background:url("../img/veg2.png") no-repeat;background-size:20vw;left:1.4vw;top:9.5vw}
+    80%  {background:url("../img/flow1.png") no-repeat;background-size:21vw;left:1.2vw;top:6.9vw}
+    100%  {background:url("../img/flow2.png") no-repeat;background-size:22vw;left:.6vw;top:6.2vw}
+}
+.contact{position: relative;top:50vw;right:-42vw;width:8vw;background-color: blue;height:2.5vw;
+        color:red;}
+.about{position: relative;top:45vw;right:-14vw;width:8vw;background-color: blue;height:2.5vw;
+        color:red;}
+.order{position: relative;top:40vw;right:-33.5vw;width:8vw;background-color: blue;height:2.5vw;
+      color:red;}
+.fert:hover~.gif{visibility: visible;
+  -webkit-animation-name: ferty; /* Safari 4.0 - 8.0 */
+                  -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
+                  animation-name: ferty;
+                  animation-duration: 4s;
+                  animation-iteration-count: infinite;
+                  animation-timing-function: linear;
+                  }
+  /*change the location and orientation as necessary for growing plant sequence of pictures in keyframe animation*/
+.soil{position: relative;top:50vw;left:20vw;width:8vw;background-color: blue;height:2.5vw;
+        color:red;}
+        @keyframes soily {
+            0%   {background:url("../img/seedling.png") no-repeat; background-size:5vw;left:35vw;top:50.5vw}
+            20%  {background:url("../img/seedling1a.png") no-repeat;background-size:8vw;left:33.5vw;top:47.5vw}
+            40%  {background:url("../img/veg1.png") no-repeat;background-size:20vw;left:27.6vw;top:38.3vw}
+            65% {background:url("../img/veg2.png") no-repeat;background-size:20vw;left:27.2vw;top:32.2vw}
+            80%  {background:url("../img/flow1.png") no-repeat;background-size:21vw;left:27vw;top:29.3vw}
+            100%  {background:url("../img/flow2.png") no-repeat;background-size:22vw;left:26.5vw;top:28.7vw}
+        }
+        .soil:hover~.gif{visibility: visible;
+          -webkit-animation-name: soily; /* Safari 4.0 - 8.0 */
+                          -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
+                          animation-name: soily;
+                          animation-duration: 4s;
+                          animation-iteration-count: infinite;
+                          animation-timing-function: linear;
+                          }
+.lights{position: relative;top:15vw;left:20vw;width:8vw;background-color: blue;height:2.5vw;
+      color:red;}
+      @keyframes lightsy {
+          0%   {background:url("../img/seedling.png") no-repeat; background-size:5vw;left:35vw;top:50.5vw}
+          20%  {background:url("../img/seedling1a.png") no-repeat;background-size:8vw;left:33.5vw;top:47.5vw}
+          40%  {background:url("../img/veg1.png") no-repeat;background-size:20vw;left:27.6vw;top:38.3vw}
+          65% {background:url("../img/veg2.png") no-repeat;background-size:20vw;left:27.2vw;top:32.2vw}
+          80%  {background:url("../img/flow1.png") no-repeat;background-size:21vw;left:27vw;top:29.3vw}
+          100%  {background:url("../img/flow2.png") no-repeat;background-size:22vw;left:26.5vw;top:28.7vw}
+      }
+      .lights:hover~.gif{visibility: visible;
+                        -webkit-animation-name: lightsy; /* Safari 4.0 - 8.0 */
+                        -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
+                        animation-name: lightsy;
+                        animation-duration: 4s;
+                        animation-iteration-count: infinite;
+                        animation-timing-function: linear;
+                        }
+button:not(.personal){max-height:25px;overflow:hidden;}
+.personal{position: relative;top:40vw;right:3vh;width:15vw;background-color: blue;height:5vw;overflow:hidden;
+        color:red;text-align: center;overflow:hidden;max-width:113px;
+        -ms-transform: skewY(20deg); /* IE 9 */
+        -webkit-transform: skewY(20deg); /* Chrome, Safari, Opera */
+        transform: skewY(20deg);
+        padding:0px}
+        @keyframes personaly {
+            0%   {background:url("../img/seedling.png") no-repeat; background-size:5vw;left:35vw;top:50.5vw}
+            20%  {background:url("../img/seedling1a.png") no-repeat;background-size:8vw;left:33.5vw;top:47.5vw}
+            40%  {background:url("../img/veg1.png") no-repeat;background-size:20vw;left:27.6vw;top:38.3vw}
+            65% {background:url("../img/veg2.png") no-repeat;background-size:20vw;left:27.2vw;top:32.2vw}
+            80%  {background:url("../img/flow1.png") no-repeat;background-size:21vw;left:27vw;top:29.3vw}
+            100%  {background:url("../img/flow2.png") no-repeat;background-size:22vw;left:26.5vw;top:28.7vw}
+        }
+.personal:hover~.gif{visibility: visible;
+                -webkit-animation-name: personaly; /* Safari 4.0 - 8.0 */
+                  -webkit-animation-duration: 5s; /* Safari 4.0 - 8.0 */
+                  animation-name: personaly;
+                  animation-duration: 5s;
+                  animation-iteration-count: infinite;
+                  animation-timing-function: linear;
+                  }
+.lightRayz{background: url("../img/lightStart.png") no-repeat;opacity: 0.6;visibility: hidden;position:absolute;background-size:9vw;width:80vw;height:72vw;z-index:-2;left:37.5vw;top:14vw}
+    @keyframes lightz {
+        0%   {background:url("../img/lightStart.png") no-repeat; visibility: visible;background-size:9vw;left:37.5vw;top:14vw}
+        4%   {background:none no-repeat; visibility: hidden; background-size:9vw;left:37.5vw;top:14vw}
+        9%   {background:url("../img/lightStart.png") no-repeat; visibility: visible;background-size:9vw;left:37.5vw;top:14vw}
+        11%   {background:none no-repeat; visibility: hidden; background-size:9vw;left:37.5vw;top:14vw}
+        14%  {background:url("../img/lightRayz.png") no-repeat;visibility: hidden;background-size:9vw;left:37.5vw;top:9vw}
+        15%  {background:url("../img/lightRayz.png") no-repeat;background-size:9vw;left:37.5vw;top:9vw}
+        22%  {background:url("../img/lightRayz.png") no-repeat;background-size:15vw;left:34.5vw;top:6vw}
+        30%  {background:url("../img/lightRayz.png") no-repeat;background-size:20vw;left:32.5vw;top:3vw}
+        40% {background:url("../img/lightRayz.png") no-repeat;background-size:26vw;left:30vw;top:-1vw}
+        55%  {background:url("../img/lightRayz.png") no-repeat;background-size:30vw;left:28vw;top:-3vw}
+        70%  {background:url("../img/lightRayz.png") no-repeat;background-size:40vw;left:22.5vw;top:-9vw}
+        85%  {background:url("../img/lightRayz.png") no-repeat;background-size:50vw;left:18.5vw;top:-15vw}
+        100%  {background:url("../img/lightRayz.png") no-repeat;background-size:50vw;left:18.5vw;top:-15vw}
+}
+.lights:hover~.lightRayz{visibility: visible;
+                -webkit-animation-name: lightz; /* Safari 4.0 - 8.0 */
+                  -webkit-animation-duration: 5s; /* Safari 4.0 - 8.0 */
+                  animation-name: lightz;
+                  animation-duration: 5s;
+                  animation-iteration-count: infinite;
+                  animation-timing-function: linear;
+                  }
+
+@media screen and (max-width: 500px) and (min-width: 309px) {
+    .personal {
+      right:-5vw;top:38vw
+    }
+    .about{right: -9.5vw;}
+    .lightRayz{top: vw;}
+}
+@media screen and (max-width: 530px) and (min-width: 501px) {
+    .personal {
+      right:-5vw;
+    }
+    .about{right: -9.5vw;}
+    .lightRayz{top: vw;}
+}
+@media screen and (max-width: 600px) and (min-width: 531px) {
+  .personal {
+    right:-4vw;
+  }
+  .about{right: -9.5vw;}
+  .lightRayz{top: vw;}
+}
+@media screen and (max-width: 700px) and (min-width: 601px) {
+  .personal {
+    right:-1vw;top:36vw
+  }
+  .about{right: -9.5vw;}
+  .lightRayz{top: vw;}
+}
+@media screen and (max-width: 750px) and (min-width: 700px) {
+  .personal {
+    right:-3vw;top:36vw
+  }
+  .about{right: -9.5vw;}
+  .lights{top:13vw}
+}
+
+@media screen and (max-width: 1000px) and (min-width: 751px) {
+  .personal {
+    right:-3vw;top:36vw
+  }
+  .about{right: -13vw;}
+  .lights{top:12vw}
+  .lightRayz{top: vw;}
+}
+@media screen and (max-width: 900px) and (min-width: 751px) {
+  .about{right: -10.5vw;}
+
+}
+@media screen and (max-width: 1100px) and (min-width: 1001px) {
+  .personal {
+    right:-5vw;width:12vw;top:36vw
+  }
+  .about{right: -13.5vw;width:8.5vw}
+  .fert{top:26vw}
+  .lights{top:11vw}
+  .lightRayz{top: vw;}
+}
+@media screen and (max-width: 1200px) and (min-width: 1101px) {
+  .personal {
+    right:-7vw;width:12vw;top:35vw
+  }
+  .about{right: -15.5vw;}
+  .fert{top:26vw}
+  .lights{top:10vw}
+  .lightRayz{top: vw;}
+}
+@media screen and (max-width: 1320px) and (min-width: 1201px) {
+  .personal {
+    right:-10vw;width:10vw;top:35vw
+  }
+  .about{right: -15.5vw;}
+  .fert{top:26vw}
+  .lights{top:10vw}
+  .lightRayz{top: vw;}
+}
+@media screen and (max-width: 1450px) and (min-width: 1321px) {
+  .personal {
+    right:-12vw;width:10vw;top:35vw
+  }
+  .about{right: -16.5vw;}
+  .fert{top:25vw}
+  .lights{top:11vw}
+  .lightRayz{top: vw;}
+}
+@media screen and (max-width: 1530px) and (min-width: 1451px) {
+  .personal {
+    right:-14vw;width:10vw;top:35vw
+  }
+  .about{right: -17.5vw;}
+  .fert{top:25vw}
+  .lights{top:10vw}
+  .lightRayz{top: vw;}
+}
+@media screen and (max-width: 1720px) and (min-width: 1531px) {
+  .personal {
+    right:-15vw;width:10vw;top:35vw
+  }
+  .about{right: -18.5vw;}
+  .fert{top:24.5vw}
+  .lights{top:9vw}
+  .lightRayz{top: vw;}
+}
+@media screen and (max-width: 1920px) and (min-width: 1721px) {
+  .personal {
+    right:-14vw;width:10vw;top:35vw
+  }
+  .about{right:-19vw}
+  .fert{top:24.2vw}
+  .lights{top:9vw}
+  .lightRayz{top: vw;}
+}
