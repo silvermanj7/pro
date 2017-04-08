@@ -97,15 +97,15 @@ button:not(.personal){max-height:25px;overflow:hidden;}
         4%   {background:none no-repeat; visibility: hidden; background-size:9vw;left:37.5vw;top:14vw}
         9%   {background:url("../img/lightStart.png") no-repeat; visibility: visible;background-size:9vw;left:37.5vw;top:14vw}
         11%   {background:none no-repeat; visibility: hidden; background-size:9vw;left:37.5vw;top:14vw}
-        14%  {background:url("../img/lightRayz.png") no-repeat;visibility: hidden;background-size:9vw;left:37.5vw;top:9vw}
-        15%  {background:url("../img/lightRayz.png") no-repeat;background-size:9vw;left:37.5vw;top:9vw}
-        22%  {background:url("../img/lightRayz.png") no-repeat;background-size:15vw;left:34.5vw;top:6vw}
-        30%  {background:url("../img/lightRayz.png") no-repeat;background-size:20vw;left:32.5vw;top:3vw}
-        40% {background:url("../img/lightRayz.png") no-repeat;background-size:26vw;left:30vw;top:-1vw}
-        55%  {background:url("../img/lightRayz.png") no-repeat;background-size:30vw;left:28vw;top:-3vw}
-        70%  {background:url("../img/lightRayz.png") no-repeat;background-size:40vw;left:22.5vw;top:-9vw}
-        85%  {background:url("../img/lightRayz.png") no-repeat;background-size:50vw;left:18.5vw;top:-15vw}
-        100%  {background:url("../img/lightRayz.png") no-repeat;background-size:50vw;left:18.5vw;top:-15vw}
+        14%  {background:url("../img/lightrayz.png") no-repeat;visibility: hidden;background-size:9vw;left:37.5vw;top:9vw}
+        15%  {background:url("../img/lightrayz.png") no-repeat;background-size:9vw;left:37.5vw;top:9vw}
+        22%  {background:url("../img/lightrayz.png") no-repeat;background-size:15vw;left:34.5vw;top:6vw}
+        30%  {background:url("../img/lightrayz.png") no-repeat;background-size:20vw;left:32.5vw;top:3vw}
+        40% {background:url("../img/lightrayz.png") no-repeat;background-size:26vw;left:30vw;top:-1vw}
+        55%  {background:url("../img/lightrayz.png") no-repeat;background-size:30vw;left:28vw;top:-3vw}
+        70%  {background:url("../img/lightrayz.png") no-repeat;background-size:40vw;left:22.5vw;top:-9vw}
+        85%  {background:url("../img/lightrayz.png") no-repeat;background-size:50vw;left:18.5vw;top:-15vw}
+        100%  {background:url("../img/lightrayz.png") no-repeat;background-size:50vw;left:18.5vw;top:-15vw}
 }
 .lights:hover~.lightRayz{visibility: visible;
                 -webkit-animation-name: lightz; /* Safari 4.0 - 8.0 */
