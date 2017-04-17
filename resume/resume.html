@@ -9,7 +9,7 @@
 	<STYLE TYPE="text/css">
 	<!--
 		@page { margin-right: 0.12in; margin-top: 0.1in; margin-bottom: 0.09in }
-		body{background-image: url('https://scontent-lga3-1.xx.fbcdn.net/v/t31.0-8/17637031_10155998670534196_8325980675246090006_o.jpg?oh=f39f7eac7f89a96f4661009947f78682&oe=59853033')}
+		body{background-image: url('https://scontent-lga3-1.xx.fbcdn.net/v/t31.0-8/17637031_10155998670534196_8325980675246090006_o.jpg?oh=f39f7eac7f89a96f4661009947f78682&oe=59853033');background-size:contain;background-repeat: no-repeat;background-color: black}
 		@keyframes poop {
 			0%{background-image: url('myname1.png');}
 			2.957%{background-image: url("myname2.png");}
@@ -47,17 +47,51 @@
 			95%{background-image: url("myname34a.png");}
 			100%{background-image: url("myname34b.png");}
 		}
-		.cursiveName{background: url('myname.png') no-repeat;height:200px;background-position: center;animation-name: poop;animation-duration: 8s;animation-iteration-count: infinite;animation-delay: 2s;animation-timing-function:ease;}
-
+		.cursiveName{background: url('myname.png') no-repeat;height:200px;background-position: center;
+									animation-name: poop;animation-duration: 8s;animation-iteration-count: infinite;animation-delay: 2s;animation-timing-function:ease;}
+		@keyframes blink1 {
+			0%{background-image: url('sparkleB.png');transform: rotate(0deg);;background-size:5%}
+			16.6667%{background-image: url("sparkleG.png");}
+			33.333%{background-image: url("sparkleI.png");}
+			50%{background-image: url("sparkleO.png");transform: rotate(180deg);background-size:50%}
+			66.6667%{background-image: url("sparkleR.png");}
+			83.333%{background-image: url("sparkleV.png");}
+			100%{background-image: url("sparkleY.png");transform: rotate(360deg);background-size:100%}
+		}
+		@keyframes blink2 {
+			0%{background-image: url('sparkleO.png');transform: rotate(180deg));background-size:100%}
+			16.6667%{background-image: url("sparkleB.png");}
+			33.333%{background-image: url("sparkleY.png")}
+			50%{background-image: url("sparkleI.png");transform: rotate(360deg);background-size:50%}
+			66.6667%{background-image: url("sparkleV.png");}
+			83.333%{background-image: url("sparkleG.png")}
+			100%{background-image: url("sparkleR.png");transform: rotate(0deg);background-size:5%}
+		}
+		@keyframes blink3 {
+			0%{background-image: url('sparkleV.png');transform: rotate(360deg);background-size:5%}
+			16.6667%{background-image: url("sparkleI.png");}
+			33.333%{background-image: url("sparkleO.png");}
+			50%{background-image: url("sparkleR.png");background-size:100%;transform: rotate(0deg);}
+			66.6667%{background-image: url("sparkleY.png");}
+			83.333%{background-image: url("sparkleB.png");}
+			100%{background-image: url("sparkleG.png");transform: rotate(180deg);background-size:50%}
+		}
+		.dot{position:absolute;top:-2vw;left:42vw;background: none;width:20vw;height:20vw;background-position: center;
+			background-size:contain;background-repeat: no-repeat;animation-iteration-count: infinite;
+					animation-delay: 9.5s;animation-timing-function:linear;}
+		.blink1{animation-name: blink1;animation-duration: 2s; animation-direction: alternate;}
+		.blink2{animation-name: blink2;animation-duration: 3s;}
+		.blink3{animation-name: blink3;animation-duration: 4s;}
 
 	-->
 	</STYLE>
 </HEAD>
-<BODY LANG="en-US" TEXT="#000000" DIR="LTR">
+<BODY LANG="en-US" TEXT="#ffffff" DIR="LTR">
 
 <P CLASS="western cursiveName" ALIGN=CENTER STYLE="margin-left: -0.63in; margin-right: -0.63in; margin-bottom: 0in; line-height: 100%">
 
 </P>
+<div class="blink1 dot"></div><div class="blink2 dot"></div><div class="blink3 dot"></div>
 <P CLASS="western" ALIGN=CENTER STYLE="margin-bottom: 0in; line-height: 100%">25 Highview Ave, Hancock, ME *  (207) 422-2130 * silvermanj7@gmail.com
 </P>
 <div>
@@ -170,6 +204,13 @@
 																<P CLASS="western" ALIGN=center STYLE="margin-right: 0.19in; widows: 0; orphans: 0; text-decoration: none">
 																Arnold Fletcher Award 2013 * All-American for Water Polo 2005 *	Rensselaer Medal Award  for Mathematics and  Science 2005</P>
 
-</div>
-</BODY>
+		</div>
+	</BODY>
+	<script type="javascript">
+		/*when cursive text is finshed, pause that animation and start the blink animation. when blink animation is done, start cursive and repeat.*/
+		function myFunction() {
+		    var x = document.getElementsByClassName("cursiveName");
+		    console.log("")
+}
+	</script>
 </HTML>
