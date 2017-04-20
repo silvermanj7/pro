@@ -79,9 +79,9 @@
 		.dot{position:absolute;top:-2vw;left:42vw;background: none;width:20vw;height:20vw;background-position: center;
 			background-size:contain;background-repeat: no-repeat;animation-iteration-count: infinite;
 					animation-delay: 9.5s;animation-timing-function:linear;}
-		.blink1{animation-name: blink1;animation-duration: 2s; animation-direction: alternate;}
-		.blink2{animation-name: blink2;animation-duration: 3s;}
-		.blink3{animation-name: blink3;animation-duration: 4s;}
+		.blink1{animation-name: blink1;animation-duration: 1s; animation-direction: alternate;}
+		.blink2{animation-name: blink2;animation-duration: 2s;}
+		.blink3{animation-name: blink3;animation-duration: 3s;}
 
 	-->
 	</STYLE>
@@ -206,11 +206,50 @@
 
 		</div>
 	</BODY>
-	<script type="javascript">
+	<script>
 		/*when cursive text is finshed, pause that animation and start the blink animation. when blink animation is done, start cursive and repeat.*/
-		function myFunction() {
-		    var x = document.getElementsByClassName("cursiveName");
-		    console.log("")
-}
+
+		    var curs = document.getElementsByClassName("cursiveName");
+		    console.log("curs=",curs)
+				var blinker = document.getElementsByClassName("dot");
+		    console.log("blinker=",blinker)
+				var now= new Date()
+
+				function aniMotiOFF() {
+					blinker["0"].style.animationPlayState="initial"
+				  blinker["1"].style.animationPlayState="initial"
+				  blinker["2"].style.animationPlayState="initial"
+				}
+
+				function aniMotiON() {
+					blinker["0"].style.animationPlayState="running"
+				  blinker["1"].style.animationPlayState="running"
+				  blinker["2"].style.animationPlayState="running"
+				}
+
+				function namerOFF() {
+					curs["0"].style.animationPlayState="paused"
+				}
+
+				function namerON() {
+					curs["0"].style.animationPlayState="running"
+				}
+				var myVar = setInterval(myTimer, 500);
+
+				function myTimer() {
+			     var d = new Date();
+			     delay = d-now;
+					 console.log("delay=",delay)
+					 if (delay%9500===2||delay%9500===0||delay%9500===1){
+						 aniMotiON();
+						 namerOFF();
+						 console.log("pasued")
+					 }
+					 else if (delay%11000===2||delay%11000===0||delay%11000===1){
+						 namerON();
+						 aniMotiOFF();
+						 console.log("UNPAUSED")
+					 }
+			  }
 	</script>
 </HTML>
